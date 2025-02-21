@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="plow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Fieldshark 1200</name>
+        <specs>
+            <combination filterCategory="weights"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_plow</function>
+            <function>$l10n_function_wheelWeightsRecommended</function>
+        </functions>
+        <image>store/store_Fieldshark1200.dds</image>
+        <price>17000</price>
+        <lifetime>650</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>plows</category>
+        <vertexBufferMemoryUsage>798464</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>208640</indexBufferMemoryUsage>
+        <textureMemoryUsage>1310720</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_plow</typeDesc>
+        <filename>i3d/Fieldshark1200.i3d</filename>
+        <size width="13" length="5"/>
+        <speedLimit value="25"/>
+        <components>
+            <component centerOfMass="0 0.1 0.852" solverIterationCount="10" mass="1229" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>
+
+    <attachable allowFoldingWhileLowered="false">
+        <inputAttacherJoints>
+            <inputAttacherJoint node="inputAttacherJoint" jointType="implement" topReferenceNode="topReference" allowsLowering="true" rotLimitThreshold="0.95" transLimitThreshold="0.95" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="15" lowerRotationOffset="0" >
+                <distanceToGround lower="0.45" upper="1" />
+                <bottomArm categories="2" ballType="1"/>
+            </inputAttacherJoint>
+            <inputAttacherJoint node="inputAttacherJoint2" jointType="implement" topReferenceNode="topReference2" allowsLowering="true" lowerRotLimitScale="0 0 0" upperRotationOffset="15" lowerRotationOffset="0" >
+                <distanceToGround lower="0.45" upper="1" />
+                 <bottomArm categories="2" ballType="1"/>
+            <objectChange node="objectChange1" visibilityActive="false"  visibilityInactive="true"/>
+            <objectChange node="objectChange2" visibilityActive="false"  visibilityInactive="true"/>
+            </inputAttacherJoint>
+
+        </inputAttacherJoints>
+
+        <support animationName="moveSupport" />
+    </attachable>
+
+
+    <attacherJoints>
+        <attacherJoint node="AttacherJoint" upperRotationOffset="35" moveTime="2.5" comboTime="0">
+            <distanceToGround lower="0" upper="2"/>
+            <rotationNode node="AttacherJointRot" upperRotation="35 0 0" lowerRotation="9 0 0"/>
+            <topArm baseNode="objectChange2" filename="$data/shared/assets/upperLinks/antonioCarraroSO_45_435.xml" zScale="-1" toggleVisibility="true"/>
+            <schema position="1 0" rotation="0" invertX="false"/>
+            <objectChange node="objectChange1" rotationActive="0 0 0" rotationInactive="130 0 0"/>
+        </attacherJoint>
+        <sounds>
+            <attach template="attach01"/>
+            <hydraulic template="hydraulicOpen01"/>
+        </sounds>
+    </attacherJoints>
+
+
+
+    <powerConsumer>
+        <powerConsumerConfigurations title="$l10n_configuration_design">
+            <powerConsumerConfiguration name="6MT" price="0" workingWidth="6" forceNode="Lizard_6MT_main_component1" maxForce="20" neededMaxPtoPower="0" neededPower="260" vehicleName="6MT">
+            <objectChange node="extension01" visibilityActive="false" />
+            <objectChange node="extension02" visibilityActive="false" />
+            <objectChange node="extension03" visibilityActive="false" />
+            <objectChange node="extension04" visibilityActive="false" />
+            <objectChange node="extension01ColPart" compoundChildActive="false" />
+            <objectChange node="extension02ColPart" compoundChildActive="false" />
+            <objectChange node="extension03ColPart" compoundChildActive="false" />
+            <objectChange node="extension04ColPart" compoundChildActive="false" />
+            <objectChange node="extension01ColPartB" compoundChildActive="false" />
+            <objectChange node="extension02ColPartB" compoundChildActive="false" />
+            <objectChange node="extension03ColPartB" compoundChildActive="false" />
+            <objectChange node="extension04ColPartB" compoundChildActive="false" />
+            <objectChange node="area1" translationActive="3.2 0 0.545" />
+            <objectChange node="area2" translationActive="-3.2 0 1.358" />
+            <objectChange node="area3" translationActive="3.2 0 0.545" />
+            <objectChange node="areaMarkers1" translationActive="3.1 0 1.439" />
+            <objectChange node="areaMarkers2" translationActive="-3.1 0 1.439" />
+            <objectChange node="areaMarkers3" translationActive="0 0 0.204" />
+            <objectChange node="sizeMarkers1" translationActive="3.1 0 1.686" />
+            <objectChange node="sizeMarkers2" translationActive="-3.1 0 1.686" />
+            <objectChange node="sizeMarkers3" translationActive="0 0 0.105" />
+            <objectChange node="SoilScale" scaleActive="1.7 1 1" />
+            <objectChange node="foliageBending2" translationActive="0 0 0" />
+            <objectChange node="foliageBending1" translationActive="0 0 0" />
+            <objectChange node="foliageBending4" translationActive="0 0 0" />
+            <objectChange node="foliageBending3" translationActive="0 0 0" />
+            <objectChange node="sweepEffectLinkNode11" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode12" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode13" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode14" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode15" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode16" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode17" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode18" visibilityActive="false" />
+        </powerConsumerConfiguration>
+            <powerConsumerConfiguration name="9MT" price="2000" workingWidth="9.0" forceNode="Lizard_6MT_main_component1" maxForce="30" neededMaxPtoPower="0" neededPower="320" vehicleName="9MT">
+            <objectChange node="extension01" visibilityActive="true" />
+            <objectChange node="extension02" visibilityActive="true" />
+            <objectChange node="extension03" visibilityActive="false" />
+            <objectChange node="extension04" visibilityActive="false" />
+            <objectChange node="extension01ColPart" compoundChildActive="true" />
+            <objectChange node="extension02ColPart" compoundChildActive="true" />
+            <objectChange node="extension03ColPart" compoundChildActive="false" />
+            <objectChange node="extension04ColPart" compoundChildActive="false" />
+            <objectChange node="extension01ColPartB" compoundChildActive="true" />
+            <objectChange node="extension02ColPartB" compoundChildActive="true" />
+            <objectChange node="extension03ColPartB" compoundChildActive="false" />
+            <objectChange node="extension04ColPartB" compoundChildActive="false" />
+            <objectChange node="area1" translationActive="4.6 0 0.545" />
+            <objectChange node="area2" translationActive="-4.6 0 1.358" />
+            <objectChange node="area3" translationActive="4.6 0 0.545" />
+            <objectChange node="areaMarkers1" translationActive="4.5 0 1.439" />
+            <objectChange node="areaMarkers2" translationActive="-4.5 0 1.439" />
+            <objectChange node="areaMarkers3" translationActive="0 0 0.204" />
+            <objectChange node="sizeMarkers1" translationActive="4.5 0 1.686" />
+            <objectChange node="sizeMarkers2" translationActive="-4.5 0 1.686" />
+            <objectChange node="sizeMarkers3" translationActive="0 0 0.105" />
+            <objectChange node="foliageBending2" translationActive="-1.405 0 0" />
+            <objectChange node="foliageBending1" translationActive="1.405 0 0" />
+            <objectChange node="foliageBending4" translationActive="0 0 0" />
+            <objectChange node="foliageBending3" translationActive="0 0 0" />
+            <objectChange node="SoilScale" scaleActive="3.1 1 1" />
+            <objectChange node="sweepEffectLinkNode11" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode12" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode13" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode14" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode15" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode16" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode17" visibilityActive="false" />
+            <objectChange node="sweepEffectLinkNode18" visibilityActive="false" />
+        </powerConsumerConfiguration>
+            <powerConsumerConfiguration name="12MT" price="4000" workingWidth="12.0" forceNode="Lizard_6MT_main_component1" maxForce="40" neededMaxPtoPower="0" neededPower="340" vehicleName="12MT">
+            <objectChange node="extension01" visibilityActive="true" />
+            <objectChange node="extension02" visibilityActive="true" />
+            <objectChange node="extension03" visibilityActive="true" />
+            <objectChange node="extension04" visibilityActive="true" />
+            <objectChange node="extension01ColPart" compoundChildActive="true" />
+            <objectChange node="extension02ColPart" compoundChildActive="true" />
+            <objectChange node="extension03ColPart" compoundChildActive="true" />
+            <objectChange node="extension04ColPart" compoundChildActive="true" />
+            <objectChange node="extension01ColPartB" compoundChildActive="true" />
+            <objectChange node="extension02ColPartB" compoundChildActive="true" />
+            <objectChange node="extension03ColPartB" compoundChildActive="true" />
+            <objectChange node="extension04ColPartB" compoundChildActive="true" />
+            <objectChange node="area1" translationActive="6.1 0 0.545" />
+            <objectChange node="area2" translationActive="-6.1 0 1.358" />
+            <objectChange node="area3" translationActive="6.1 0 0.545" />
+            <objectChange node="areaMarkers1" translationActive="6 0 1.439" />
+            <objectChange node="areaMarkers2" translationActive="-6 0 1.439" />
+            <objectChange node="areaMarkers3" translationActive="0 0 0.204" />
+            <objectChange node="sizeMarkers1" translationActive="6 0 1.686" />
+            <objectChange node="sizeMarkers2" translationActive="-6 0 1.686" />
+            <objectChange node="sizeMarkers3" translationActive="0 0 0.105" />
+            <objectChange node="foliageBending2" translationActive="-1.405 0 0" />
+            <objectChange node="foliageBending1" translationActive="1.405 0 0" />
+            <objectChange node="foliageBending4" translationActive="-2.795 0 0" />
+            <objectChange node="foliageBending3" translationActive="2.795 0 0" />
+            <objectChange node="SoilScale" scaleActive="2.4 1 1" />
+            <objectChange node="sweepEffectLinkNode11" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode12" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode13" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode14" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode15" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode16" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode17" visibilityActive="true" />
+            <objectChange node="sweepEffectLinkNode18" visibilityActive="true" />
+        </powerConsumerConfiguration>
+    </powerConsumerConfigurations>
+    </powerConsumer>
+    <connectionHoses>
+        <target attacherJointIndices="1" type="hydraulicIn" node="hydrau1" />
+        <target attacherJointIndices="1" type="hydraulicOut" node="hydrau2" />
+        <hose inputAttacherJointIndices="2" type="hydraulicIn"  node="hydrau1"  length="0.75" diameter="0.02" straighteningFactor="1">
+            <objectChange node="Change1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="2" type="hydraulicOut" node="hydrau2" length="0.75" diameter="0.02" straighteningFactor="1">
+            <objectChange node="Change2" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydrau3"  length="0.75" diameter="0.02" straighteningFactor="1">
+            <objectChange node="Change2" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydrau4" length="0.75" diameter="0.02" straighteningFactor="1">
+            <objectChange node="Change1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <localHose>
+            <hose type="hydraulicIn"  node="dep11" length="0.95" straighteningFactor="0.4" diameter="0.013" adapterType="NONE" isWorldSpaceHose="true" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="dep2" straighteningFactor="0.4" />
+        </localHose>
+        <localHose>
+            <hose type="hydraulicIn"  node="dep12" length="0.95" straighteningFactor="0.4" diameter="0.013" adapterType="NONE" isWorldSpaceHose="true" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="dep3" straighteningFactor="0.4" />
+        </localHose>
+        <localHose>
+            <hose type="hydraulicIn"  node="dep13" length="0.95" straighteningFactor="0.9" diameter="0.013" adapterType="NONE" isWorldSpaceHose="true" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="dep5" straighteningFactor="0.4" />
+        </localHose>
+        <localHose>
+            <hose type="hydraulicIn"  node="dep14" length="0.95" straighteningFactor="0.4" diameter="0.013" adapterType="NONE" isWorldSpaceHose="true" isTwoPointHose="true" />
+            <target  type="hydraulicIn" node="dep6" straighteningFactor="0.4" />
+        </localHose>
+    </connectionHoses>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundReference" threshold="0.5" depthNode="0>2|4"/>
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="plow" disableBackwards="false" functionName="processPlowArea" >
+            <area startNode="area1" widthNode="area2" heightNode="area3"/>
+            <groundReferenceNode index="1"/>
+            <folding minLimit="0" maxLimit="0.5"/>
+            <onlyActiveWhenLowered value="true"/>
+        </workArea>
+    </workAreas>
+
+    <workParticles>
+        <effect workAreaIndex="1">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode01">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode02">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode03">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode04">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode05">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode06">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode07">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode08">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode09">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode10">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode11">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode12">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode13">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode14">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode15">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode16">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode17">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="sweepEffectLinkNode18">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedCultivatorSweepArray01.dds" numRows="20" rowLength="18" minFade="0.07" isCultivatorSweepEffect="true" />
+            </effectNode>
+        </effect>
+        <particle>
+            <node node="smokeEmitterShape"  refNodeIndex="1" particleType="SOIL_SMOKE" emitCountScale="1.5" />
+        </particle>
+    </workParticles>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration price="0" >
+                <foldingParts startMoveDirection="0" turnOnFoldDirection="-1" >
+                    <foldingPart animationName="foldPlow" speedScale="1" />
+                </foldingParts>
+                <size widthOffset="0.6"/>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="moveSupport1" startTime="0" endTime="0.3" startTrans="0 0.42 0" endTrans="0 0 0"/>
+            <part node="moveSupport2" startTime="0" endTime="0.3" startTrans="0 0.42 0" endTrans="0 0 0"/>
+            <part node="moveSupport3" startTime="0" endTime="0.3" startTrans="0 0.42 0" endTrans="0 0 0"/>
+            <part node="moveSupport4" startTime="0" endTime="0.3" startTrans="0 -0.42 0" endTrans="0 0 0"/>
+            <part node="moveSupport5" startTime="0" endTime="0.3" startTrans="0 -0.42 0" endTrans="0 0 0"/>
+            <part node="moveSupport6" startTime="0" endTime="0.3" startTrans="0 -0.42 0" endTrans="0 0 0"/>
+            <part node="moveSupport7" startTime="0" endTime="0.3" startTrans="0 -0.42 0" endTrans="0 0 0"/>
+            <sound template="clackVar5" startTime="0.09" direction="-1" volumeScale="0.9" pitchScale="1.6" linkNode="inputAttacherJoint"/>
+            <sound template="latchSmall" startTime="0.05" direction="-1" volumeScale="0.2" pitchScale="1.2" linkNode="inputAttacherJoint"/>
+            <sound template="clackVar1" startTime="0.05" direction="1" volumeScale="1.2" pitchScale="1.6" linkNode="inputAttacherJoint"/>
+        </animation>
+        <animation name="foldPlow">
+            <part node="folding1" startTime="0" endTime="4" startRot="0 0 0" endRot="0 0 -99"/>
+            <part node="folding2" startTime="0" endTime="4" startRot="0 0 0" endRot="0 0 99"/>
+            <part node="folding3" startTime="0" endTime="0.5" startTrans="0 -0.1 0" endTrans="0 0.8 0"/>
+
+            <part node="extension02ColPart" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="-2 0 0"/>
+            <part node="extension04ColPart" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="-3 0 0"/>
+            <part node="extension01ColPart" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="2 0 0"/>
+            <part node="extension03ColPart" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="3 0 0"/>
+            <sound template="hydraulicOpen04" startTime="0.01" endTime="3.99" volumeScale="2.1" pitchScale="1.4" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="clackVar6"       startTime="0.01" direction="1"  volumeScale="1.1" pitchScale="0.8" />
+            <sound template="clackVar6"       startTime="3.9"  direction="1"  volumeScale="0.8" pitchScale="0.7" />
+            <sound template="sheetImp02"      startTime="3.9"  direction="1"  volumeScale="2"   pitchScale="0.7" />
+            <sound template="clackVar6"       startTime="3.99" direction="-1" volumeScale="0.7" pitchScale="0.8" />
+            <sound template="foldStartMed02"  startTime="0.1"  direction="-1" volumeScale="1.7" pitchScale="0.7" />	
+        </animation>
+    </animations>
+    <cylindered>
+        <movingTools>
+            <movingTool node="folding1" playSound="true">
+                <dependentPart node="dep1"/>
+            </movingTool>
+            <movingTool node="folding2" playSound="true">
+                <dependentPart node="dep4"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="dep1" referencePoint="dep7" referenceFrame="Lizard_6MT_main_component1">
+                <translatingPart node="dep9"/>
+            </movingPart>
+            <movingPart node="dep4" referencePoint="dep8" referenceFrame="Lizard_6MT_main_component1">
+                <translatingPart node="dep10"/>
+            </movingPart>
+        </movingParts>
+    </cylindered>
+    <cultivator>
+        <onlyActiveWhenLowered value="true"/>
+    </cultivator>
+
+    <plow>
+        <sounds>
+            <turn template="defaultPlowTurn" linkNode="Lizard_6MT_main_component1" />
+            <work template="defaultPlowWork" linkNode="Lizard_6MT_main_component1" />
+        </sounds>
+    </plow>
+
+    <foliageBending>
+        <bendingNode minX="-1.173" maxX="1.173" minZ="0.398" maxZ="1.301" yOffset="0.5" />
+        <bendingNode minX="-0" maxX="2.371" minZ="0.398" maxZ="1.301" yOffset="-0.35" node="folding2" />
+        <bendingNode minX="-2.371" maxX="0" minZ="0.398" maxZ="1.301" yOffset="-0.35" node="folding1" />
+        <bendingNode minX="0" maxX="2.371" minZ="0.398" maxZ="1.301" yOffset="-0.35" node="foliageBending1" />
+        <bendingNode minX="-2.371" maxX="0" minZ="0.398" maxZ="1.301" yOffset="-0.35" node="foliageBending2" />
+        <bendingNode minX="0" maxX="2.371" minZ="0.398" maxZ="1.301" yOffset="-0.35" node="foliageBending3" />
+        <bendingNode minX="-2.371" maxX="0" minZ="0.398" maxZ="1.301" yOffset="-0.35" node="foliageBending4" />
+    </foliageBending>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="50" fieldMultiplier="2"/>
+    <baseColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="12">
+        <material materialSlotName="MT" />
+    </baseColorConfigurations>
+    <designColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="7">
+        <material materialSlotName="MT2" />
+    </designColorConfigurations>
+    <ai>
+        <needsLowering value="true" />
+        <collisionTrigger node="collisionTrigger" width="4" height="2"/>
+        <areaMarkers leftNode="areaMarkers1" rightNode="areaMarkers2" backNode="areaMarkers3" />
+        <sizeMarkers leftNode="sizeMarkers1" rightNode="sizeMarkers2" backNode="sizeMarkers3" />
+        <hasNoFullCoverageArea value="true" />
+        <agentAttachment width="2.0" height="2" length="6" lengthOffset="-0.2"/>
+    </ai>
+
+    <i3dMappings>
+        <i3dMapping id="Lizard_6MT_main_component1" node="0>" />
+        <i3dMapping id="inputAttacherJoint" node="0>0" />
+        <i3dMapping id="inputAttacherJoint2" node="0>6" />
+        <i3dMapping id="topReference" node="0>1" />
+        <i3dMapping id="topReference2" node="0>9" />
+        <i3dMapping id="objectChange1" node="0>7|1" />
+        <i3dMapping id="objectChange2" node="0>8" />
+        <i3dMapping id="AttacherJoint" node="0>7|0" />
+        <i3dMapping id="AttacherJointRot" node="0>7" />
+        <i3dMapping id="hydrau1" node="0>5|6|8" />
+        <i3dMapping id="hydrau2" node="0>5|6|9" />
+        <i3dMapping id="hydrau3" node="0>5|6|10" />
+        <i3dMapping id="hydrau4" node="0>5|6|11" />
+        <i3dMapping id="Change1" node="0>5|6|0" />
+        <i3dMapping id="Change2" node="0>5|6|1" />
+        <i3dMapping id="groundReference" node="0>2|3" />
+        <i3dMapping id="area1" node="0>2|0" />
+        <i3dMapping id="area2" node="0>2|1" />
+        <i3dMapping id="area3" node="0>2|2" />
+        <i3dMapping id="smokeEmitterShape" node="0>10|0|0" />
+        <i3dMapping id="sweepEffectLinkNode01" node="0>10|2" />
+        <i3dMapping id="sweepEffectLinkNode02" node="0>10|3" />
+        <i3dMapping id="sweepEffectLinkNode03" node="0>10|4" />
+        <i3dMapping id="sweepEffectLinkNode04" node="0>10|5" />
+        <i3dMapping id="sweepEffectLinkNode05" node="0>10|6" />
+        <i3dMapping id="sweepEffectLinkNode06" node="0>10|7" />
+        <i3dMapping id="sweepEffectLinkNode07" node="0>10|8" />
+        <i3dMapping id="sweepEffectLinkNode08" node="0>10|9" />
+        <i3dMapping id="sweepEffectLinkNode09" node="0>10|10" />
+        <i3dMapping id="sweepEffectLinkNode10" node="0>10|11" />
+        <i3dMapping id="moveSupport1" node="0>5|5" />
+        <i3dMapping id="moveSupport2" node="0>5|0|2" />
+        <i3dMapping id="moveSupport3" node="0>5|1|2" />
+        <i3dMapping id="moveSupport4" node="0>5|0|2|0|0" />
+        <i3dMapping id="moveSupport5" node="0>5|0|2|1|0" />
+        <i3dMapping id="moveSupport6" node="0>5|1|2|0|0" />
+        <i3dMapping id="moveSupport7" node="0>5|1|2|1|0" />
+
+        <i3dMapping id="folding1" node="0>5|0" />
+        <i3dMapping id="folding2" node="0>5|1" />
+        <i3dMapping id="folding3" node="0>2" />
+        <i3dMapping id="dep1" node="0>5|2" />
+        <i3dMapping id="dep2" node="0>5|6|4" />
+        <i3dMapping id="dep3" node="0>5|6|5" />
+        <i3dMapping id="dep4" node="0>5|4" />
+        <i3dMapping id="dep5" node="0>5|6|6" />
+        <i3dMapping id="dep6" node="0>5|6|7" />
+        <i3dMapping id="dep7" node="0>5|0|1" />
+        <i3dMapping id="dep8" node="0>5|1|1" />
+        <i3dMapping id="dep9" node="0>5|2|0" />
+        <i3dMapping id="dep10" node="0>5|4|0" />
+        <i3dMapping id="dep11" node="0>5|4|2" />
+        <i3dMapping id="dep12" node="0>5|4|3" />
+        <i3dMapping id="dep13" node="0>5|2|2" />
+        <i3dMapping id="dep14" node="0>5|2|3" />
+        <i3dMapping id="areaMarkers1" node="0>3|0|0" />
+        <i3dMapping id="areaMarkers2" node="0>3|0|1" />
+        <i3dMapping id="areaMarkers3" node="0>3|0|2" />
+        <i3dMapping id="sizeMarkers1" node="0>3|1|0" />
+        <i3dMapping id="sizeMarkers2" node="0>3|1|1" />
+        <i3dMapping id="sizeMarkers3" node="0>3|1|2" />
+        <i3dMapping id="collisionTrigger" node="0>3|2" />
+        <i3dMapping id="vis" node="0>5|6" />
+        <i3dMapping id="extension01" node="0>5|1|3|1" />
+        <i3dMapping id="extension02" node="0>5|0|3|1" />
+        <i3dMapping id="extension03" node="0>5|1|3|2" />
+        <i3dMapping id="extension04" node="0>5|0|3|2" />
+        <i3dMapping id="extension01ColPart" node="0>5|0|2|0" />
+        <i3dMapping id="extension02ColPart" node="0>5|1|2|0" />
+        <i3dMapping id="extension03ColPart" node="0>5|0|2|1" />
+        <i3dMapping id="extension04ColPart" node="0>5|1|2|1" />
+        <i3dMapping id="extension01ColPartB" node="0>5|0|2|0|0|0" />
+        <i3dMapping id="extension02ColPartB" node="0>5|1|2|0|0|0" />
+        <i3dMapping id="extension03ColPartB" node="0>5|0|2|1|0|0" />
+        <i3dMapping id="extension04ColPartB" node="0>5|1|2|1|0|0" />
+        <i3dMapping id="sweepEffectLinkNode11" node="0>10|12" />
+        <i3dMapping id="sweepEffectLinkNode12" node="0>10|13" />
+        <i3dMapping id="sweepEffectLinkNode13" node="0>10|14" />
+        <i3dMapping id="sweepEffectLinkNode14" node="0>10|15" />
+        <i3dMapping id="sweepEffectLinkNode15" node="0>10|16" />
+        <i3dMapping id="sweepEffectLinkNode16" node="0>10|17" />
+        <i3dMapping id="sweepEffectLinkNode17" node="0>10|18" />
+        <i3dMapping id="sweepEffectLinkNode18" node="0>10|19" />
+        <i3dMapping id="SoilScale" node="0>10|0" />
+        <i3dMapping id="foliageBending1" node="0>5|1|4" />
+        <i3dMapping id="foliageBending2" node="0>5|0|4" />
+        <i3dMapping id="foliageBending3" node="0>5|1|5" />
+        <i3dMapping id="foliageBending4" node="0>5|0|5" />
+    </i3dMappings>
+</vehicle>

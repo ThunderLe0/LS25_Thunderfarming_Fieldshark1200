@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="95">
+    <author>Leo</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Thunderfarming Fieldshark 1200</en>
+		<de>Thunderfarming Fieldshark 1200</de>
+    </title>
+    <description>
+        <en>
+<![CDATA[Subsoiler with plough function, ideal for creating fields quickly.
+
+- Category: Plows
+- Price: $17,000
+- Working width: 6.0m, 9.0m, 12.0m
+- Required power: 260 hp
+- Working speed: 19 kph
+- Configuration: 6m, 9m, 12m]]>
+        </en>
+        <de>
+<![CDATA[Tiefenlockerer mit Pflugfunktion, ideal zum schnellen Anlegen von Feldern.
+
+- Shopkategorie: Pflüge
+- Preis: 17.000€
+- Arbeitsbreite: 6.0m, 9.0m, 12.0m
+- Benötigte Leistung: 260 PS
+- Arbeitsgeschwindigkeit: 19 km/h
+- Konfiguration: 6m, 9m, 12m
+]]>
+        </de>
+        <fr>
+<![CDATA[Sous-soleuse avec fonction charrue, idéale pour créer des champs rapidement.
+
+- Catégorie: Charrues
+- Prix: 17 000€
+- Largeur de travail: 6.0m, 9.0m, 12.0m
+- Puissance requise: 260 CV
+- Vitesse de travail: 19 km/h
+- Configuration: 6m, 9m, 12m]]>
+        </fr>
+    </description>
+    <iconFilename>store/store_Fieldshark1200.dds</iconFilename>
+    <storeItems>
+        <storeItem xmlFilename="xml/Fieldshark1200.xml"/>
+    </storeItems>
+	<brands>
+        <brand title="Thunderfarming" image="brand/brand_ThF.dds" name="Thunderfarming"/>
+    </brands>
+	<multiplayer supported="true"/>
+</modDesc>
