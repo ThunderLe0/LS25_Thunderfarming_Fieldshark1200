@@ -21,3 +21,4 @@ jobs:
       uses: ncipollo/release-action@v1.12.0
       with:
         artifacts: "FS25_Thunderfarming_Fieldshark1200.zip"
+        allowUpdates: true
