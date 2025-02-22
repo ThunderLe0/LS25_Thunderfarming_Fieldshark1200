@@ -372,11 +372,11 @@
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
     <washable dirtDuration="90" washDuration="1" workMultiplier="50" fieldMultiplier="2"/>
 	
-    <baseColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="12">
+    <baseColorConfigurations price="0" useDefaultColors="true">
 		<baseColorConfiguration name="Thunderfarming Black" color="0 0 0" isDefault="true"/>
         <material materialSlotName="MT" />
     </baseColorConfigurations>
-    <designColorConfigurations price="0" useDefaultColors="true" defaultColorIndex="7">
+    <designColorConfigurations price="0" useDefaultColors="true">
 		<baseColorConfiguration name="Thunderfarming Earth" color="0.63 0.58 0" isDefault="true"/>
         <material materialSlotName="MT2" />
     </designColorConfigurations>
