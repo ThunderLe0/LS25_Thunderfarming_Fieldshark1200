@@ -377,7 +377,7 @@
         <material materialSlotName="MT" />
     </baseColorConfigurations>
     <designColorConfigurations price="0" useDefaultColors="true">
-		<baseColorConfiguration name="Thunderfarming Earth" color="0.63 0.58 0" isDefault="true"/>
+		<designColorConfiguration name="Thunderfarming Earth" color="0.63 0.58 0" isDefault="true"/>
         <material materialSlotName="MT2" />
     </designColorConfigurations>
     <ai>

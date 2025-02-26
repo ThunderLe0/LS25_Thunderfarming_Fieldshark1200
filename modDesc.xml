@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="95">
+<modDesc descVersion="96">
     <author>Leo</author>
     <version>1.0.0.0</version>
     <title>
@@ -39,7 +39,7 @@
 - Configuration: 6m, 9m, 12m]]>
         </fr>
     </description>
-    <iconFilename>store/store_Fieldshark1200.dds</iconFilename>
+    <iconFilename>store/icon_Fieldshark1200.dds</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/Fieldshark1200.xml"/>
     </storeItems>
