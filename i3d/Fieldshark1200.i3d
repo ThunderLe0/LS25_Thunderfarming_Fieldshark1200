@@ -180,15 +180,15 @@
         <TransformGroup name="Right" translation="-0.77 0.833 0" nodeId="72">
           <TransformGroup name="Ref" translation="-0.159 0.207 -0.681391" rotation="176.039 89.3048 -180" nodeId="73"/>
           <TransformGroup name="backDoorHydraulicsRef" translation="-0.158459 0.0880182 0.885954" rotation="176.039 89.3048 -180" nodeId="74"/>
-          <Shape name="frameMiddleSupportCol" shapeId="2" nodeId="75" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
-            <Shape name="extension01ColPart" shapeId="3" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+          <Shape name="frameMiddleSupportCol" shapeId="2" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="75" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+            <Shape name="extension01ColPart" shapeId="3" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
               <TransformGroup name="transform" nodeId="77">
-                <Shape name="CollisionExt" shapeId="4" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+                <Shape name="CollisionExt" shapeId="4" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="78" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
               </TransformGroup>
             </Shape>
-            <Shape name="extension03ColPart" shapeId="5" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+            <Shape name="extension03ColPart" shapeId="5" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
               <TransformGroup name="transform" nodeId="80">
-                <Shape name="CollisionExt2" shapeId="6" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+                <Shape name="CollisionExt2" shapeId="6" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
               </TransformGroup>
             </Shape>
           </Shape>
@@ -203,20 +203,20 @@
           </Shape>
           <TransformGroup name="foliageBending2" translation="-1.405 0 0" nodeId="88"/>
           <TransformGroup name="foliageBending4" nodeId="89"/>
-          <Shape name="Col2" shapeId="10" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          <Shape name="Col2" shapeId="10" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
         </TransformGroup>
         <TransformGroup name="Left" translation="0.77 0.833 0" nodeId="91">
           <TransformGroup name="Ref" translation="0.172 0.136 -0.680271" rotation="-8.666 -90 0" nodeId="92"/>
           <TransformGroup name="backDoorHydraulicsRef" translation="0.160371 0.0939819 0.885954" rotation="-8.666 -90 0" nodeId="93"/>
-          <Shape name="frameLeftSupportCol" shapeId="11" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
-            <Shape name="extension02ColPart" shapeId="12" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+          <Shape name="frameLeftSupportCol" shapeId="11" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+            <Shape name="extension02ColPart" shapeId="12" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="95" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
               <TransformGroup name="transform" nodeId="96">
-                <Shape name="CollisionExt" shapeId="13" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+                <Shape name="CollisionExt" shapeId="13" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
               </TransformGroup>
             </Shape>
-            <Shape name="extension04ColPart" shapeId="14" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
+            <Shape name="extension04ColPart" shapeId="14" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="98" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11">
               <TransformGroup name="transform" nodeId="99">
-                <Shape name="CollisionExt" shapeId="15" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
+                <Shape name="CollisionExt" shapeId="15" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="19"/>
               </TransformGroup>
             </Shape>
           </Shape>
@@ -231,7 +231,7 @@
           </Shape>
           <TransformGroup name="foliageBending1" translation="-1.40495 0 0" nodeId="107"/>
           <TransformGroup name="foliageBending3" translation="-2.79534 0 0" nodeId="108"/>
-          <Shape name="Col" shapeId="18" nodeId="109" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          <Shape name="Col" shapeId="18" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" nodeId="109" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
         </TransformGroup>
         <TransformGroup name="Cylinder" translation="-0.113 1.02 0.887954" rotation="7.339 -90 0" nodeId="110">
           <TransformGroup name="Cylind" translation="0 0 0.345" nodeId="111">
@@ -250,7 +250,7 @@
           <TransformGroup name="transform" translation="0 0.0589273 0.0119757" rotation="-180 0 -180" nodeId="121"/>
           <TransformGroup name="transform" translation="0.001 0.041291 0.0710731" rotation="-180 -29.7374 180" nodeId="122"/>
         </TransformGroup>
-        <Shape name="frameRightSupportCol" shapeId="21" compoundChild="true" density="0.001" nodeId="123" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+        <Shape name="frameRightSupportCol" shapeId="21" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="123" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
         <Shape name="Vis" shapeId="22" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="14,17,18">
           <TransformGroup name="transform" nodeId="125">
             <Shape name="g7_group" translation="0.0192452 0.818971 0.427472" rotation="61.7169 2.514 -179.57" scale="1.5 1.5 1.5" shapeId="23" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="10">
