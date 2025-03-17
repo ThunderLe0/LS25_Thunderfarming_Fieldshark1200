@@ -85,9 +85,9 @@
             <objectChange node="extension02ColPartB" compoundChildActive="false" />
             <objectChange node="extension03ColPartB" compoundChildActive="false" />
             <objectChange node="extension04ColPartB" compoundChildActive="false" />
-            <objectChange node="area1" translationActive="3.2 0 0.545" />
-            <objectChange node="area2" translationActive="-3.2 0 1.358" />
-            <objectChange node="area3" translationActive="3.2 0 0.545" />
+            <objectChange node="area1" translationActive="3 0 0.545" />
+            <objectChange node="area2" translationActive="-3 0 0.545" />
+            <objectChange node="area3" translationActive="3 0 1.358" />
             <objectChange node="areaMarkers1" translationActive="3.1 0 1.439" />
             <objectChange node="areaMarkers2" translationActive="-3.1 0 1.439" />
             <objectChange node="areaMarkers3" translationActive="0 0 0.204" />
@@ -121,9 +121,9 @@
             <objectChange node="extension02ColPartB" compoundChildActive="true" />
             <objectChange node="extension03ColPartB" compoundChildActive="false" />
             <objectChange node="extension04ColPartB" compoundChildActive="false" />
-            <objectChange node="area1" translationActive="4.6 0 0.545" />
-            <objectChange node="area2" translationActive="-4.6 0 1.358" />
-            <objectChange node="area3" translationActive="4.6 0 0.545" />
+            <objectChange node="area1" translationActive="4.5 0 0.545" />
+            <objectChange node="area2" translationActive="-4.5 0 0.545" />
+            <objectChange node="area3" translationActive="4.5 0 1.358" />
             <objectChange node="areaMarkers1" translationActive="4.5 0 1.439" />
             <objectChange node="areaMarkers2" translationActive="-4.5 0 1.439" />
             <objectChange node="areaMarkers3" translationActive="0 0 0.204" />
@@ -157,9 +157,9 @@
             <objectChange node="extension02ColPartB" compoundChildActive="true" />
             <objectChange node="extension03ColPartB" compoundChildActive="true" />
             <objectChange node="extension04ColPartB" compoundChildActive="true" />
-            <objectChange node="area1" translationActive="6.1 0 0.545" />
-            <objectChange node="area2" translationActive="-6.1 0 1.358" />
-            <objectChange node="area3" translationActive="6.1 0 0.545" />
+            <objectChange node="area1" translationActive="6 0 0.545" />
+            <objectChange node="area2" translationActive="-6 0 0.545" />
+            <objectChange node="area3" translationActive="6 0 1.358" />
             <objectChange node="areaMarkers1" translationActive="6 0 1.439" />
             <objectChange node="areaMarkers2" translationActive="-6 0 1.439" />
             <objectChange node="areaMarkers3" translationActive="0 0 0.204" />
