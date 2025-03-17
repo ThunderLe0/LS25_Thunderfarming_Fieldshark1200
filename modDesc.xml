@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="96">
     <author>Leo</author>
-    <version>0.0.0.1</version>
+    <version>0.0.0.2</version>
     <title>
         <en>Thunderfarming Fieldshark 1200</en>
 		<de>Thunderfarming Fieldshark 1200</de>
@@ -15,7 +15,11 @@
 - Working width: 6.0m, 9.0m, 12.0m
 - Required power: 260 hp
 - Working speed: 19 kph
-- Configuration: 6m, 9m, 12m]]>
+- Configuration: 6m, 9m, 12m
+
+Changelog 0.0.0.2
+- Collision changed
+]]>
         </en>
         <de>
 <![CDATA[Tiefenlockerer mit Pflugfunktion, ideal zum schnellen Anlegen von Feldern.
@@ -26,18 +30,11 @@
 - Benötigte Leistung: 260 PS
 - Arbeitsgeschwindigkeit: 19 km/h
 - Konfiguration: 6m, 9m, 12m
+
+Changelog 0.0.0.2
+- Kollision geändertcollision
 ]]>
         </de>
-        <fr>
-<![CDATA[Sous-soleuse avec fonction charrue, idéale pour créer des champs rapidement.
-
-- Catégorie: Charrues
-- Prix: 17 000€
-- Largeur de travail: 6.0m, 9.0m, 12.0m
-- Puissance requise: 260 CV
-- Vitesse de travail: 19 km/h
-- Configuration: 6m, 9m, 12m]]>
-        </fr>
     </description>
     <iconFilename>store/icon_Fieldshark1200.dds</iconFilename>
     <storeItems>
