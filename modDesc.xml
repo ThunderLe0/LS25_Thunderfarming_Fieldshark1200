@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="96">
+<modDesc descVersion="97">
     <author>Leo</author>
-    <version>0.0.0.2</version>
+    <version>0.0.0.3</version>
     <title>
         <en>Thunderfarming Fieldshark 1200</en>
 		<de>Thunderfarming Fieldshark 1200</de>
@@ -31,8 +31,8 @@ Changelog 0.0.0.2
 - Arbeitsgeschwindigkeit: 19 km/h
 - Konfiguration: 6m, 9m, 12m
 
-Changelog 0.0.0.2
-- Kollision geändertcollision
+Changelog 0.0.0.3
+- Kollision geändert
 ]]>
         </de>
     </description>

@@ -27,7 +27,7 @@
     <base>
         <typeDesc>$l10n_typeDesc_plow</typeDesc>
         <filename>i3d/Fieldshark1200.i3d</filename>
-        <size width="13" length="5"/>
+        <size width="13" length="2"/>
         <speedLimit value="25"/>
         <components>
             <component centerOfMass="0 0.1 0.852" solverIterationCount="10" mass="1229" />
